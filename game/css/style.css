@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #1e1e24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1e1e24;
+    color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Definindo uma largura fixa para o container */
+}
+
+body.dark-mode .container {
+    background-color: #1e1e24;
+    border: 1px solid #666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#pokemon {
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+#captureButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #011627;
+}
+
+#captureCount {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+#botaodemodoescuro {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 4px;
+    font-family: "Arial", Impact, Charcoal, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px black;
+}
